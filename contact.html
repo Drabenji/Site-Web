@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr" id="haut">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style_contact.css">
+		<link rel="stylesheet" href="basPage.css">
+		<link rel="stylesheet" href="menu.css"  >
+		<title>Contact</title>
+	</head>
+	
+	<body>
+		<div class="fond">
+		
+			
+			<nav>
+			<label for="toggle" class="labmenu">☰</label>
+    		<input type="checkbox" id="toggle">			
+				<div class="menu">
+					<a href="index.html" >Accueil</a>
+					<a href="Tarifs.html">Nos offres</a>
+					<a href="a_propos_de_nous.html">A propos de nous</a>
+					<a href="contact.html">Contact</a>
+					<a href="vosAmis.html">Vos amis</a>
+					<a href="index.html"> <img src="img/logo.png" alt="logo" width="35" height="115" > FRIEND FOR A DAY</a>
+				</div>
+			</nav>		
+		
+		<main>
+		<section class="boutonform">
+			<a href="#form"> Cliquez pour remplir un formulaire </a>		
+		</section>
+		<section class="FAQ">
+			<h1>Vos questions</h1>
+					
+					<article>
+						<p> Est-ce légal ?</p>					
+					</article>
+					
+					<article>
+						<p>Oui, notre service est 100% légal. Nous sommes en contact avec de multiples avocats qui vérifient sans cesse qu'il n'y a pas de problèmes. 
+						S'il y en a, nous adaptons nos offres au plus vite afin d'être conforme aux lois en vigueur.</p>					
+					</article>
+
+					<article>
+						<p>Quelles mesures de sécurité mettez-vous en place ?</p>					
+					</article>
+		
+					<article>
+						<p>Nous mettons en place une multitude de mesures pour assurer la sécurité de nos employés.<br> 
+						Tout d'abord, ils ont le droit d'annuler une rencontre avec un client ou de partir directement si celui-ci leur paraît louche ou les menace. 
+						Ils sont aussi équipés d'un téléphone avec lequel ils peuvent appeler ou envoyer un message à tout moment à nos gardes du corps chargés de leur sécurité, qui se déplaceront en instant pour aller les aider si quelque chose se passe mal.</p>					
+					</article>
+					
+					<article>
+						<p>Comment puis-je annuler ou modifier une rencontre prévue avec un ami ?</p>					
+					</article>		
+					
+					<article>
+						<p>La flexibilité est essentielle pour nous, les imprévus peuvent arriver.<br> Il suffit tout simplement d'appeler notre centre d'aide sous un préavis d'un jour maximum, et ils se chargeront d'annuler votre rencontre ou de la déplacer à un jour différent.</p>
+					</article>
+					
+					<article>
+						<p>Puis-je rester en contact avec un ami si l'expérience est positive ?</p>					
+					</article>
+					
+					<article>
+					<p>Bien sûr ! Vous êtes libres de rester en contact avec un ami si le coeur vous en dit, tant que cet ami est d'accord. 
+					Une fois le rendez-vous terminé, votre relation avec votre ami ne nous regarde plus, à condition bien sûr que cet ami veuille aussi rester en contact.</p>
+					</article>
+		
+		</section>
+		
+		<section class="formulaire" id="form">
+			<h2>Formulaire de demande d'ami</h2>
+			
+			
+			<form method="POST">
+		
+			<div>
+				<label for="id">Votre identifiant (si vous avez un compte) : </label>
+				<input type="text" name="id" id="id" placeholder="Votre identifiant">			
+			</div>
+			
+			<div>
+				<label for="mdp">Votre mot de passe (si vous avez un compte) : </label>
+				<input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe">			
+			</div>
+			
+			<div>
+				<label for="mail">Sinon, votre adresse mail : </label>
+				<input type="email" name="mail" id="mail" placeholder="Votre adresse mail">
+			</div>
+			
+			<div>
+				<label for="mdpmail">Et son mot de passe : </label>
+				<input type="password" name="mdpmail" id="mdpmail" placeholder="Votre mot de passe">
+			</div>
+			
+			<div>
+				<label for="tel">Entrez votre numéro de téléphone (facultatif) : </label>
+				<input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone" pattern="^(\+33|0)[6-7](\d\d){4}$">			
+			</div>			
+			
+			<div>
+				<label for="offre">Type d'offre souhaitée : </label>
+				<select id="offre" name="offre" required>
+					<option value="">--choississez une offre--</option>
+  					 <option value="standard">Tarif standard</option>
+   				 <option value="groupé">Offre groupée</option>
+    			  	 <option value="mensuel">Abonnement mensuel</option>
+    				 <option value="annuel">Abonnement annuel</option>
+  				</select>
+			</div>
+				
+			<div>
+				<p>Voulez-vous l'option premium ?</p>
+				<input type="radio" id="oui" name="premium" value="Oui" required>
+				<label for="oui">Oui</label><br>
+				<input type="radio" id="non" name="premium" value="Non" required>
+				<label for="non">Non</label><br>
+			</div>
+			
+			<div>
+				<label for="date">A quelle date voulez-vous rencontrer votre ami ?</label>
+				<input type="date" name="date" id="date" required>			
+			</div>
+
+			<div>
+				<label for="nom">Si option premium, entrez le nom de l'ami choisi : </label>
+				<input type="text" name="nom" id="nom" placeholder="Nom de votre ami">			
+			</div>
+			<div>
+				<p>Souhaitez-vous recevoir des notifications par téléphone à la suite de votre commande ?</p>
+				<input type="radio" id="oui2" name="notifs" value="Oui" required>
+				<label for="oui">Oui</label><br>
+				<input type="radio" id="non2" name="notifs" value="Non" required>
+				<label for="non">Non</label><br>			
+			</div>
+
+			<div>
+				<p>J'accepte la politique de confidentialité?</p>
+				<input type="radio" id="j'accepte" name="politique" value="J'accepte" required>
+				<label for="j'accepte">J'accepte</label> 
+			</div>
+
+			<div>
+				<input type="submit" value="Envoyer">
+				<input type="reset" value="Remettre à zéro">			
+			</div>		
+			</form>
+		</section>
+		
+		<section class="haut">
+				
+				<a href="#haut"> Cliquez pour retourner en haut de la page </a>
+				
+				</section>
+				
+						</main>
+		<section class="baspage">
+							<img src="img/logo.png" alt="logo">
+							<p>Friend for a day <br> We'll make your day better !</p>
+							<p>@Copyright 2024 Friend for a day</p>
+							<p>Créateurs:<br>COLACE Raphaël<br>TELECHEA-LOJOU Nell<br>BRIBANT Benjamin</p>
+							<img src="img/posi.png" alt="logoPosition" class="logopos">
+							<p>Route forestière de la Génisse, 77300 Fontainebleau<br></p>
+							<img src="img/logo_upec.png" alt="logoUpec" class="logoupec">
+							<p>réseau social: <br></p>
+							<a href="https://fr.linkedin.com/in/friend-for-a-day-60625b2ab"	> <img src="img/logolinkedin2.png" alt="logolinkedin"> </a>
+				
+				</section>
+				
+	</div>
+	</body>	
+	
+	
+</html>
+		
+		
+		
+		

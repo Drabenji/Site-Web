@@ -1,0 +1,41 @@
+
+@media screen and (min-width: 1200px ){
+	.baspage {
+	column-count: 4;
+	background-color: #fa8a3b;
+	color: #5f2270;
+	padding: 1% 2% 1% 2%;
+	margin: -1em;
+	margin-top: 1em;
+	}
+	img.logopos {
+		width: 10%;
+
+	}
+	img.logoupec {
+		border-radius: 0px;	
+	
+	}
+}
+
+@media screen and (max-width: 960px ) {
+	.baspage {
+		column-count: 2;
+		background-color: #fa8a3b;
+		color: #5f2270;
+		padding: 1% 4% 2% 4%;
+		margin: -1em;
+		margin-top: 1em;
+	
+	}
+	
+	img.logopos {
+		width: 10%;
+
+	}
+	
+	img.logoupec {
+		border-radius: 0px;	
+	
+	}
+}
